@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -38,7 +38,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+>
 
 
 ==========
@@ -56,7 +56,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,15 +66,15 @@ $ echo *
 
 What happens?
 ----------
-
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris# echo *
+3D Objects AppData Application Data Contacts Cookies Desktop Documents Downloads Dropbox Favorites Links Local Settings MicrosoftEdgeBackups Music My Documents NTUSER.DAT NTUSER.DAT{a21eb152-61e6-11e8-8a65-c85b768f23b0}.TM.blf NTUSER.DAT{a21eb152-61e6-11e8-8a65-c85b768f23b0}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{a21eb152-61e6-11e8-8a65-c85b768f23b0}.TMContainer00000000000000000002.regtrans-ms NetHood OneDrive Pictures PrintHood Recent Saved Games Searches SendTo Start Menu Templates Videos mtec1002-lab-03 mtec1002-lab-03.tar.gz ntuser.dat.LOG1 ntuser.dat.LOG2 ntuser.ini usb_driver
 
 ==========
 7. Ok... that's a lot of output.  How do we clean up our screen so that it's empty again?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
