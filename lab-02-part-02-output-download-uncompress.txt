@@ -87,7 +87,22 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris# wget google.com
+--2019-02-18 00:43:19--  http://google.com/
+Resolving google.com (google.com)... 2607:f8b0:4006:800::200e, 172.217.7.14
+Connecting to google.com (google.com)|2607:f8b0:4006:800::200e|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www.google.com/ [following]
+--2019-02-18 00:43:19--  http://www.google.com/
+Resolving www.google.com (www.google.com)... 2607:f8b0:4006:800::2004, 172.217.7.4
+Connecting to www.google.com (www.google.com)|2607:f8b0:4006:800::2004|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html’
 
+index.html                        [ <=>                                              ]  11.03K  --.-KB/s    in 0s
+
+2019-02-18 00:43:19 (29.9 MB/s) - ‘index.html’ saved [11299]
 
 
 ==========
@@ -97,7 +112,17 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris# wget www.google.com
+--2019-02-18 00:45:41--  http://www.google.com/
+Resolving www.google.com (www.google.com)... 2607:f8b0:4006:800::2004, 172.217.7.4
+Connecting to www.google.com (www.google.com)|2607:f8b0:4006:800::2004|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html.1’
 
+index.html.1                      [ <=>                                              ]  11.04K  --.-KB/s    in 0.001s
+
+2019-02-18 00:45:42 (21.2 MB/s) - ‘index.html.1’ saved [11300]
 
 
 ==========
