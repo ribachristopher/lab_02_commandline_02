@@ -161,6 +161,31 @@ unzip mtec1002-lab-02.zip
 
 Copy and paste the output below.
 ----------
+inflating: mtec1002-lab-02/books/science-fiction/pg86.txt  
+  inflating: mtec1002-lab-02/logs/.DS_Store  
+   creating: __MACOSX/mtec1002-lab-02/logs/
+  inflating: __MACOSX/mtec1002-lab-02/logs/._.DS_Store  
+  inflating: mtec1002-lab-02/logs/access-0.log  
+  inflating: mtec1002-lab-02/logs/access-1.log  
+  inflating: mtec1002-lab-02/logs/access-10.log  
+  inflating: mtec1002-lab-02/logs/access-11.log  
+  inflating: mtec1002-lab-02/logs/access-111.log  
+  inflating: mtec1002-lab-02/logs/access-112.log  
+  inflating: mtec1002-lab-02/logs/access-113.log  
+  inflating: mtec1002-lab-02/logs/access-114.log  
+  inflating: mtec1002-lab-02/logs/access-115.log  
+  inflating: mtec1002-lab-02/logs/access-12.log  
+  inflating: mtec1002-lab-02/logs/access-122.log  
+  inflating: mtec1002-lab-02/logs/access-13.log  
+  inflating: mtec1002-lab-02/logs/access-14.log  
+  inflating: mtec1002-lab-02/logs/access-15.log  
+  inflating: mtec1002-lab-02/logs/access-150.log  
+  inflating: mtec1002-lab-02/logs/access-151.log  
+  inflating: mtec1002-lab-02/logs/access-152.log  
+  inflating: mtec1002-lab-02/logs/access-158.log  
+  inflating: mtec1002-lab-02/logs/access-159.log  
+  inflating: mtec1002-lab-02/logs/access-16.log  
+  inflating: mtec1002-lab-02/logs/access-160.log  
 
 
 
@@ -172,7 +197,8 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+pwd
+/Users/student/stuff
 
 
 ==========
@@ -184,7 +210,8 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+stuff student$ ls
+hello.txt
 
 
 ==========
@@ -196,25 +223,17 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
-
-
-==========
-19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
-
-$ tar -cvf stuff.tar stuff
-
-Copy and paste the output below.
-----------
-
-
+tar -cvf stuff.tar stuff
+a stuff
+a stuff/hello.txt
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+Share 1 Read Only	Sound Effects Server	stuff
+Share 2 Read-Write	Student Temporary Work	stuff.tar
 
 
 ==========
@@ -224,7 +243,8 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+Share 1 Read Only	Sound Effects Server	stuff
+Share 2 Read-Write	Student Temporary Work	stuff.tar.gz
 
 
 ==========
@@ -266,8 +286,8 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
-
-
+curl -o github.gz http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
+-cvf github github.gz
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
